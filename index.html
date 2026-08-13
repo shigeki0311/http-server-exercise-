@@ -5,6 +5,23 @@
       h1 { color: #f4005f; }
       p { font-weight: bold; }
     </style>
+    <head>
+  …
+  <script>
+    function clickHandler() {
+        const box = document.getElementById("box");
+        const p = document.createElement("p");
+        p.innerText = "Added by JS"
+        box.appendChild(p);
+    }
+  </script>
+</head>
+<body>
+…
+  <button onclick="clickHandler()">JS</button>
+  <div id="box"></div>
+</body>
+
 
     <title>HTML</title>
   </head>
@@ -18,3 +35,5 @@ HTML
     </p>
   </body>
 </html>
+
+
